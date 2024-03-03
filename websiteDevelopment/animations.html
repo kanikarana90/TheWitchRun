@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animations</title>
+</head>
+<style>
+    .container
+    {
+        background-color: darkmagenta ;
+    }
+    .box
+    {
+        background-color: lightpink;
+        width: 200px;
+        height: 200px;
+        /* animation-name: kanika; */
+        /* animation-name: kanika1;
+        animation-duration: 3s;
+        animation-iteration-count: infinite; */
+        /*
+            animation: animation-name animation-duration animation-timing animation-delay animation-iteration-count animation-fill-mode
+        */
+        animation: kanika1 4s ease-in infinite backwards;
+        position: relative;
+        /* animation-fill-mode: forwards; */
+        /* animation-timing-function: ease-out; */
+        /* animation-delay: 2s; */
+        /* animation-direction: reverse; */
+    }
+    @keyframes kanika1 {
+        0%{
+            top: 0px;
+            left: 0px;
+        }
+        25%{
+            top: 200px;
+            left: 0px;
+        }
+        75%{
+           top: 200px;
+           left: 200px;
+        }
+        100%{
+            top: 0px;
+           left: 200px;
+        }
+    }
+</style>
+<body>
+    <div class="container">
+        <div class="box">
+            THIS IS A BOX
+        </div>
+</div>
+    
+</body>
+</html>

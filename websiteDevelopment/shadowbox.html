@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shadow</title>
+</head>
+<style>
+    body{
+        background-color: darkgreen;
+        background-image: url(aura.jpg);
+    }
+    .container
+    {
+        display: flex;
+    }
+    .card
+    {
+        padding: 23px 12px;
+        background-color: lightpink;
+        margin: 23px 12px;
+        /* border: 2px solid white; */
+        /* box-shadow: 6px 6px 6px darkmagenta; */
+        box-shadow: inset 5px 5px pink;
+    }
+    h1
+    {
+        color: darkmagenta;
+    }
+    .card h1
+    {
+
+        text-shadow: 3px 4px lightblue;
+    }
+</style>
+<body>
+    <div class="container">
+        <div class="card" id="card-1">
+            <h1>Card 1</h1>
+            <p>
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                 Earum nisi accusamus quos eaque qui magni, assumenda laudantium 
+                 aliquid non unde mollitia. Cumque dicta magnam, sequi expedita
+                  sunt a delectus similique omnis magni, eveniet sint?
+            </p>
+        </div>
+        <div class="card" id="card-2">
+            <h1>Card 2</h1>
+            <p>
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                 Earum nisi accusamus quos eaque qui magni, assumenda laudantium 
+                 aliquid non unde mollitia. Cumque dicta magnam, sequi expedita
+                  sunt a delectus similique omnis magni, eveniet sint?
+            </p>
+        </div>
+        <div class="card" id="card-3">
+            <h1>Card 3</h1>
+            <p>
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                 Earum nisi accusamus quos eaque qui magni, assumenda laudantium 
+                 aliquid non unde mollitia. Cumque dicta magnam, sequi expedita
+                  sunt a delectus similique omnis magni, eveniet sint?
+            </p>
+        </div>
+    </div>
+</body>
+</html>

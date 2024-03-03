@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    h1{
+        background-color: lightblue;
+        color: black;
+        text-align: center;
+    }
+     /* div p{ //Div ke andar jitte bhi p h unpe ye style krde except that bahar wala p
+        background-color: antiquewhite;
+        color: black;
+        font-size: large;
+    }  */
+    /* div > p{ //Div ke direct child affect hoga
+        background-color: antiquewhite;
+        color: black;
+        font-size: large;
+    } */
+    div + p{ /*vo para jiska pichla sibling div ho*/
+        background-color: antiquewhite;
+        color: black;
+        font-size: large;
+    } 
+</style>
+<body>
+    <h1>LESSON ON SELECTORS</h1>
+    <div class="container">
+        <div class="row">
+            <p>THIS IS A PARAGRAPH</p>
+        </div>
+        <p>THIS IS ANOTHER PARAGRAPH</p>
+    </div>
+    <p>THIS IS OUTERMOST  PARAGRAPH</p>
+</body>
+</html>

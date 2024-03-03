@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    :root
+    {
+        --box-color: darkgreen;
+    }
+    body{
+        background-color: var(--box-color);
+    }
+    .container
+    {
+        display: flex;
+    }
+    .box{
+        background-color: lightgreen;
+        margin: 23px 12px;
+        display: flex;
+        padding: 23px;
+        width: 400px;
+        height: 400px;
+    }
+    h1{
+        text-align: center;
+        justify-content: center;
+    }
+</style>
+<body>
+    <div class="container">
+        <div class="box" id="box-1"><h1>BOX 1<h1></div>
+        <div class="box" id="box-2"><h1>BOX 2<h1></div>
+        <div class="box" id="box-3"><h1>BOX 3<h1></div>
+    </div>
+</body>
+</html>
